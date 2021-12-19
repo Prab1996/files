@@ -9,5 +9,5 @@ try:
     print('your pay per week is $',pay)
     print('your pay biweekly is $',pay*2)
     print('your pay per year is $',pay*52)
-else:
+except:
     print('please answer yes or no')

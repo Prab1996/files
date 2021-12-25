@@ -1,11 +1,15 @@
 x = input("how many hours did you work last week?")
 y = input ("how much is your payrate per hour?")
-try:
-    x = float(x)
-    y = float(y)
-except:
-    print("please enter hours and payrate as number greater than 0")
-    quit()
+def floatcheck(fc):
+    try:
+        fc = float(fc)
+    except:
+        print("please enter hours and payrate as number greater than 0")
+        quit()
+floatcheck(x)
+x = float(x)
+floatcheck(y)
+y = float(y)
 if x > 40:
     ox = x - 40
     rx = x - ox

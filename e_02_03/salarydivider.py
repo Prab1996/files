@@ -1,6 +1,6 @@
 salary = input('how much is your salary?: ')
 try:
-    salary = int(salary)
+    salary = float(salary)
 except:
     salary = -1
 if salary > 0:

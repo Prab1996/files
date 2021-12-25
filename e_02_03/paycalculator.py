@@ -5,11 +5,11 @@ try:
     if ft == 'no':
         x = input('how many hours you work per week?: ')
     try:
-        x = int(x)
+        x = float(x)
         x > 0
         y = input('pay rate per hour?: ')
         try:
-            y = int(y)
+            y = float(y)
             if y > 0:
                 pay = int(x) * int(y)
                 print('your pay per week is $',pay)

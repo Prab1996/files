@@ -1,8 +1,8 @@
 x = input("how many hours did you work last week?")
 y = input ("how much is your payrate per hour?")
 try:
-    x = int(x)
-    y = int(y)
+    x = float(x)
+    y = float(y)
 except:
     print("please enter hours and payrate as number greater than 0")
     quit()
